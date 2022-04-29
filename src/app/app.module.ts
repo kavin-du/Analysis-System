@@ -8,12 +8,14 @@ import { AppComponent } from './app.component';
 import { PiechartComponent } from './COMPONENTS/piechart/piechart.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ColumnchartComponent } from './COMPONENTS/columnchart/columnchart.component';
+import { LinechartComponent } from './COMPONENTS/linechart/linechart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PiechartComponent,
     ColumnchartComponent,
+    LinechartComponent,
   ],
   imports: [
     BrowserModule,
