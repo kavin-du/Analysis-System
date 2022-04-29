@@ -58,6 +58,7 @@ export class LinechartComponent implements OnInit {
         }
       },
       grid: {
+        show: true,
         row: {
           colors: ["#f3f3f3", "transparent"], // takes an array which will be repeated on columns
           opacity: 0.5
@@ -65,7 +66,10 @@ export class LinechartComponent implements OnInit {
         padding: {
           left: 0,
           right: 0,
-        }
+          top: 0,
+          bottom: 0,
+        },
+        
       },
       xaxis: {
         categories: ["Henry Segal","Trukishtowels","Cinema Etoile","Svanane","Bali","Key Industries","Gongshow","NEFF","Port & Company","Swim Systems", "Avenue", "Matrix", "Parker", "IZOD", "HUGO BOSS"]

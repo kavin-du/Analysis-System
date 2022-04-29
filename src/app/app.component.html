@@ -1,22 +1,40 @@
 <div class="body">
-
   <div class="left">
-    <h2>Where are prospects located?</h2>
-    <img src="assets/usa.jpg" alt="usa image">
-    
-    <h2>Brand Traffic by Source, OS</h2>
-    <div class="donuts">
-      <app-donut [showLegend]="false" title="Macintosh"></app-donut>
-      <app-donut [showLegend]="true" title="Windows"></app-donut>
-      <app-donut [showLegend]="false" title="Linux"></app-donut>
+    <div class="map">
+      <h2>Where are prospects located?</h2>
+      <img src="assets/usa.jpg" alt="usa image" />
+    </div>
+
+    <div class="middle">
+      <h2>Brand Traffic by Source, OS</h2>
+      <div class="donuts">
+        <app-donut [showLegend]="false" title="Macintosh"></app-donut>
+        <app-donut [showLegend]="true" title="Windows"></app-donut>
+        <app-donut [showLegend]="false" title="Linux"></app-donut>
+      </div>
     </div>
     <app-table></app-table>
   </div>
-  
+
   <div class="right">
-    <app-piechart></app-piechart>
+    <div class="top">
+      <div class="info">
+        <span>7,822</span>
+        <p>Visitors Past Week</p>
+      </div>
+
+      <mat-divider [vertical]="true"></mat-divider>
+      
+      <div class="info">
+        <span>81,131</span>
+        <p>Total Converted Visitors</p>
+      </div>
+      <mat-divider [vertical]="true"></mat-divider>
+      
+      <app-piechart></app-piechart>
+    </div>
     <app-columnchart></app-columnchart>
+    <mat-divider></mat-divider>
     <app-linechart></app-linechart>
-    
   </div>
 </div>

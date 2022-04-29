@@ -1,5 +1,5 @@
 import { Component, Input, OnInit, ViewChild } from '@angular/core';
-import { ApexNonAxisChartSeries, ApexChart, ApexResponsive, ApexPlotOptions, ChartComponent, ApexDataLabels, ApexTitleSubtitle, ApexLegend } from 'ng-apexcharts';
+import { ApexNonAxisChartSeries, ApexChart, ApexResponsive, ApexPlotOptions, ChartComponent, ApexDataLabels, ApexTitleSubtitle, ApexLegend, ApexGrid } from 'ng-apexcharts';
 
 export type ChartOptions = {
   series: ApexNonAxisChartSeries,
@@ -9,6 +9,7 @@ export type ChartOptions = {
   plotOptions: ApexPlotOptions,
   title: ApexTitleSubtitle,
   legend: ApexLegend,
+  grid: ApexGrid,
 }
 
 @Component({
@@ -68,7 +69,17 @@ export class DonutComponent implements OnInit {
       legend: {
         show: this.showLegend,
         position: 'bottom'
-      }
+      },
+      grid: {
+        show: true,
+        padding: {
+          left: 0,
+          right: 0,
+          top: 0,
+          bottom: 0,
+        },
+        
+      },
     };
    }
 

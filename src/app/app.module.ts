@@ -12,6 +12,7 @@ import { LinechartComponent } from './COMPONENTS/linechart/linechart.component';
 import { TableComponent } from './COMPONENTS/table/table.component';
 import { MatTableModule } from '@angular/material/table';
 import { DonutComponent } from './COMPONENTS/donut/donut.component' ;
+import {MatDividerModule} from '@angular/material/divider'; 
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { DonutComponent } from './COMPONENTS/donut/donut.component' ;
     AppRoutingModule,
     NgApexchartsModule,
     BrowserAnimationsModule,
-    MatTableModule
+    MatTableModule,
+    MatDividerModule
   ],
   providers: [],
   bootstrap: [AppComponent]
