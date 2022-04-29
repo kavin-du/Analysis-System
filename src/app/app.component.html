@@ -1,12 +1,26 @@
+<!-- <mat-toolbar color="primary">
+  <button mat-icon-button class="example-icon">
+    <mat-icon>menu</mat-icon>
+  </button>
+  <span>My Dashboard</span>
+  <span class="example-spacer"></span>
+  <button mat-icon-button class="example-icon favorite-icon">
+    <mat-icon>favorite</mat-icon>
+  </button>
+  <button mat-icon-button class="example-icon">
+    <mat-icon>share</mat-icon>
+  </button>
+</mat-toolbar> -->
+
 <div class="body">
   <div class="left">
     <div class="map">
-      <h2>Where are prospects located?</h2>
+      <h2 style="color: gray">Where are prospects located?</h2>
       <img src="assets/usa.jpg" alt="usa image" />
     </div>
 
     <div class="middle">
-      <h2>Brand Traffic by Source, OS</h2>
+      <h2 style="color: gray">Brand Traffic by Source, OS</h2>
       <div class="donuts">
         <app-donut [showLegend]="false" title="Macintosh"></app-donut>
         <app-donut [showLegend]="true" title="Windows"></app-donut>
@@ -24,17 +38,16 @@
       </div>
 
       <mat-divider [vertical]="true"></mat-divider>
-      
+
       <div class="info">
         <span>81,131</span>
         <p>Total Converted Visitors</p>
       </div>
       <mat-divider [vertical]="true"></mat-divider>
-      
+
       <app-piechart></app-piechart>
     </div>
     <app-columnchart></app-columnchart>
-    <mat-divider></mat-divider>
     <app-linechart></app-linechart>
   </div>
 </div>

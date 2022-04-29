@@ -13,6 +13,9 @@ import { TableComponent } from './COMPONENTS/table/table.component';
 import { MatTableModule } from '@angular/material/table';
 import { DonutComponent } from './COMPONENTS/donut/donut.component' ;
 import {MatDividerModule} from '@angular/material/divider'; 
+import {MatToolbarModule} from '@angular/material/toolbar'; 
+import {MatIconModule} from '@angular/material/icon'; 
+import {MatButtonModule} from '@angular/material/button'; 
 
 @NgModule({
   declarations: [
@@ -29,7 +32,10 @@ import {MatDividerModule} from '@angular/material/divider';
     NgApexchartsModule,
     BrowserAnimationsModule,
     MatTableModule,
-    MatDividerModule
+    MatDividerModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]

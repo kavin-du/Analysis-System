@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { ApexChart, ApexNonAxisChartSeries, ApexPlotOptions, ApexResponsive, ChartComponent } from 'ng-apexcharts';
+import { ApexChart, ApexNonAxisChartSeries, ApexPlotOptions, ApexResponsive, ApexTitleSubtitle, ChartComponent } from 'ng-apexcharts';
 
 
 export type ChartOptions = {
@@ -8,6 +8,7 @@ export type ChartOptions = {
   responsive: ApexResponsive[],
   labels: any,
   plotOptions: ApexPlotOptions,
+  title: ApexTitleSubtitle,
 }
 
 @Component({
@@ -20,11 +21,13 @@ export class PiechartComponent implements OnInit {
   @ViewChild('chart')
   chart!: ChartComponent;
 
-  public chartOptions: Partial<ChartOptions>;
+  public chartOptions!: Partial<ChartOptions>;
 
-  constructor() {
+  constructor() { }
+
+  ngOnInit(): void {
     this.chartOptions = {
-      
+
       series: [44, 55, 13, 43, 22],
       chart: {
         width: 380,
@@ -35,7 +38,7 @@ export class PiechartComponent implements OnInit {
         {
           breakpoint: 480,
           options: {
-            
+
             chart: {
               width: 200,
             },
@@ -49,11 +52,16 @@ export class PiechartComponent implements OnInit {
         pie: {
           expandOnClick: false,
         },
-      }
+      },
+      title: {
+        text: "Visits by Browser",
+        align: "center",
+        style: {
+          color: 'gray',
+          fontSize: '20px',
+        }
+      },
     };
-   }
-
-  ngOnInit(): void {
   }
-
 }
+

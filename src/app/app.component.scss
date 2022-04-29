@@ -1,6 +1,11 @@
+.example-spacer {
+  flex: 1 1 auto;
+}
 
 .body {
+  position: absolute;
   display: flex;
+
   img {
     height: 350px;
     object-fit: scale-down;
@@ -35,8 +40,8 @@
     
     app-table {
       border: 1px solid rgb(198, 198, 198);
-      // border-bottom: none;
-      padding-bottom: 15%;
+      border-bottom: none;
+      border-right: none;
     }
   
     
@@ -45,20 +50,16 @@
   .right {
     width: 50%;
 
-    mat-divider {
-      background-color: rgb(198, 198, 198);
-    }
-
     .top {
       height: 33.33vh;
       display: flex;
       align-items: center;
       justify-content: center;
       border: 1px solid rgb(198, 198, 198);
-
+      
       mat-divider {
-        height: 100%;
         background-color: rgb(198, 198, 198);
+        height: 100%;
       }
       
       .info {
@@ -76,6 +77,17 @@
         }
       }
     }
+
+    app-columnchart {
+      display: block;
+      border: 1px solid rgb(198, 198, 198);
+    }
+
+    app-linechart{
+      display: block;
+      border: 1px solid rgb(198, 198, 198);
+    }
+    
   }
 
 

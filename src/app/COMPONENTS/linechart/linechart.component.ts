@@ -54,7 +54,8 @@ export class LinechartComponent implements OnInit {
         text: "Most Correlated Brands",
         align: "center",
         style: {
-          color: 'gray'
+          color: 'gray',
+          fontSize: '20px',
         }
       },
       grid: {

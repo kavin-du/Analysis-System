@@ -1,5 +1,5 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
-import { ApexAxisChartSeries, ApexChart, ApexDataLabels, ApexFill, ApexLegend, ApexNonAxisChartSeries, ApexPlotOptions, ApexResponsive, ApexTitleSubtitle, ApexXAxis, ApexYAxis, ChartComponent } from 'ng-apexcharts';
+import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
+import { ApexAxisChartSeries, ApexChart, ApexDataLabels, ApexFill, ApexLegend, ApexPlotOptions, ApexResponsive, ApexTitleSubtitle, ApexXAxis, ApexYAxis, ChartComponent } from 'ng-apexcharts';
 
 export type ChartOptions = {
   series: ApexAxisChartSeries,
@@ -17,7 +17,7 @@ export type ChartOptions = {
 @Component({
   selector: 'app-columnchart',
   templateUrl: './columnchart.component.html',
-  styleUrls: ['./columnchart.component.scss']
+  styleUrls: ['./columnchart.component.scss'],
 })
 export class ColumnchartComponent implements OnInit {
 
@@ -89,7 +89,8 @@ export class ColumnchartComponent implements OnInit {
         text: 'Website Sessions by Hour of Day and User Lifetime Order Tier',
         align: 'center',
         style: {
-          color: 'gray'
+          color: 'gray',
+          fontSize: '20px',
         }
       },
       yaxis: {

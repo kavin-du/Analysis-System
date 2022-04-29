@@ -1,13 +1,11 @@
-<div class="body">
-  <h3 class="title">Visits by Browser</h3>
-  <div id="chart">
-    <apx-chart
-      [series]="chartOptions.series!"
-      [chart]="chartOptions.chart!"
-      [labels]="chartOptions.labels"
-      [responsive]="chartOptions.responsive!"
-      [plotOptions]="chartOptions.plotOptions!"
-    >
-    </apx-chart>
-  </div>
+<div id="chart">
+  <apx-chart
+    [series]="chartOptions.series!"
+    [chart]="chartOptions.chart!"
+    [labels]="chartOptions.labels"
+    [responsive]="chartOptions.responsive!"
+    [plotOptions]="chartOptions.plotOptions!"
+    [title]="chartOptions.title!"
+  >
+  </apx-chart>
 </div>
