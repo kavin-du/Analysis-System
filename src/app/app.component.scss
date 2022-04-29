@@ -1,0 +1,29 @@
+
+.body {
+  display: flex;
+  img {
+    height: 350px;
+    object-fit: scale-down;
+  }
+
+  .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  
+    h2 {
+      text-align: center;
+    }
+    
+    .donuts {
+      display: flex;
+    }
+  }
+  
+  .right {
+    width: 50%;
+    align-self: right;
+  }
+
+
+}

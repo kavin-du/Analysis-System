@@ -38,7 +38,7 @@ export class LinechartComponent implements OnInit {
         }
       ],
       chart: {
-        height: 350,
+        height: 400,
         type: "line",
         zoom: {
           enabled: false
@@ -61,6 +61,10 @@ export class LinechartComponent implements OnInit {
         row: {
           colors: ["#f3f3f3", "transparent"], // takes an array which will be repeated on columns
           opacity: 0.5
+        },
+        padding: {
+          left: 0,
+          right: 0,
         }
       },
       xaxis: {

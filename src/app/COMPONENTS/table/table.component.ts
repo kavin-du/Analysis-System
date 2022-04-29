@@ -16,9 +16,6 @@ const ELEMENT_DATA: PeriodicElement[] = [
   {position: 5, date: '2022-05-25', total: '$845.15', average: '$14.77'},
   {position: 6, date: '2022-06-12', total: '$252.34', average: '$10.44'},
   {position: 7, date: '2022-07-31', total: '$741.23', average: '$55.23'},
-  {position: 8, date: '2022-08-10', total: '$450.23', average: '$87.44'},
-  {position: 9, date: '2022-09-08', total: '$456.66', average: '$88.44'},
-  {position: 10, date: '2022-10-06', total: '$744.44', average: '$252.66'},
 ];
 
 

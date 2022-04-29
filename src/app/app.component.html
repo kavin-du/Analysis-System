@@ -1,6 +1,22 @@
-<!-- add some header -->
+<div class="body">
 
-<!-- <app-piechart></app-piechart> -->
-<!-- <app-columnchart></app-columnchart> -->
-<!-- <app-linechart></app-linechart> -->
-<app-table></app-table>
+  <div class="left">
+    <h2>Where are prospects located?</h2>
+    <img src="assets/usa.jpg" alt="usa image">
+    
+    <h2>Brand Traffic by Source, OS</h2>
+    <div class="donuts">
+      <app-donut [showLegend]="false" title="Macintosh"></app-donut>
+      <app-donut [showLegend]="true" title="Windows"></app-donut>
+      <app-donut [showLegend]="false" title="Linux"></app-donut>
+    </div>
+    <app-table></app-table>
+  </div>
+  
+  <div class="right">
+    <app-piechart></app-piechart>
+    <app-columnchart></app-columnchart>
+    <app-linechart></app-linechart>
+    
+  </div>
+</div>

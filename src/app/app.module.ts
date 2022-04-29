@@ -10,7 +10,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ColumnchartComponent } from './COMPONENTS/columnchart/columnchart.component';
 import { LinechartComponent } from './COMPONENTS/linechart/linechart.component';
 import { TableComponent } from './COMPONENTS/table/table.component';
-import { MatTableModule } from '@angular/material/table' ;
+import { MatTableModule } from '@angular/material/table';
+import { DonutComponent } from './COMPONENTS/donut/donut.component' ;
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { MatTableModule } from '@angular/material/table' ;
     ColumnchartComponent,
     LinechartComponent,
     TableComponent,
+    DonutComponent,
   ],
   imports: [
     BrowserModule,

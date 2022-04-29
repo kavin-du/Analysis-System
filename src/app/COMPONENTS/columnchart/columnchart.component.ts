@@ -48,7 +48,7 @@ export class ColumnchartComponent implements OnInit {
       ],
       chart: {
         type: "bar",
-        height: 350,
+        height: 400,
         stacked: true,
         toolbar: {
           show: true
