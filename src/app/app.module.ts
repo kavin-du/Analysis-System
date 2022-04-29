@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 
 import { PiechartComponent } from './COMPONENTS/piechart/piechart.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ColumnchartComponent } from './COMPONENTS/columnchart/columnchart.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    PiechartComponent
+    PiechartComponent,
+    ColumnchartComponent,
   ],
   imports: [
     BrowserModule,
