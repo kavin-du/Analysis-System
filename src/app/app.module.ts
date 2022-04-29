@@ -9,6 +9,8 @@ import { PiechartComponent } from './COMPONENTS/piechart/piechart.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ColumnchartComponent } from './COMPONENTS/columnchart/columnchart.component';
 import { LinechartComponent } from './COMPONENTS/linechart/linechart.component';
+import { TableComponent } from './COMPONENTS/table/table.component';
+import { MatTableModule } from '@angular/material/table' ;
 
 @NgModule({
   declarations: [
@@ -16,12 +18,14 @@ import { LinechartComponent } from './COMPONENTS/linechart/linechart.component';
     PiechartComponent,
     ColumnchartComponent,
     LinechartComponent,
+    TableComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgApexchartsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
